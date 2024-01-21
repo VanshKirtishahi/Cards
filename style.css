@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid rgb(223, 220, 220);
+  width: 350px;
+  height: 550px;
+  border-radius: 50px;
+  box-shadow: 5px 5px 5px  rgb(83, 244, 244);
+  background:white;
+}
+
+.image img {
+  width: 350px;
+  height: 250px;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+span:hover {
+  background-color: rgb(129, 128, 128);
+  color: white;
+}
+
+
+span {
+  margin-left: 15px;
+  padding: 4px 4px 4px 4px;
+  color: grey;
+  border-radius: 10px;
+  border: 1px solid rgb(223, 220, 220);
+}
+
+.nametag::before{
+  content: "";
+  position: absolute;
+  bottom: 222px;
+  left: 0;
+  width: 0%;
+  height: 3PX;
+  background:rgb(83, 244, 244);
+  transition: all .5s;
+  
+}
+
+.nametag:hover::before{
+  margin-left: 15px;
+  width: 150px;
+ transition: width 0.3 linear;
+}
+
+.nametag {
+  margin-top: 30px;
+  margin-left: 15px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.discription {
+  margin-top: 25px;
+  margin-left: 15px;
+  padding: 10px;
+  color: ;
+}
+
+button:hover {
+  box-shadow: 0 0 1px rgb(83, 244, 244),
+  0 0 2px 1px rgb(83, 244, 244),
+  0 0 2px 1px rgb(83, 244, 244);
+}
+
+button {
+  border: none;
+  padding: 12px 24px;
+  margin: 20px  100px;
+  border-radius: 24px;
+  font-size: 12px;
+  font-size: 0.8rem;  
+  letter-spacing: 2px;  
+  cursor: pointer;
+  background-color: rgb(95, 237, 237);
+  border: 1px solid rgb(223, 220, 220);
+
+}
